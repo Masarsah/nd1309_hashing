@@ -2,12 +2,17 @@
  * Step 1: Verify 'crypto-js' module is installed for your project
  * After verifying it is installed, move on to Step 2. No code needs to be written here.
  */
-
+var CryptoJS = require("crypto-js");
+console.log(CryptoJS.HmacSHA1("Message", "Key"));
 /**
  * Step 2: Import from crypto-js module the sha265 library
  */
 
+
+
+
 // Write your code here
+var SHA256 = require("crypto-js/sha256");
 
 /**
  * Variables: Do not change variable values to be able to answer the quiz
@@ -28,7 +33,11 @@ const dataObject = {
 
 function generateHash(obj) {
 	// Write your code here
-}
+	return SHA256(obj)
+	
+	
+
+}SHA256()
 
 console.log(`SHA256 Hash: ${generateHash(data1)}`);
 console.log("************************************");
